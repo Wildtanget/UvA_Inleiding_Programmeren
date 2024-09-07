@@ -1,29 +1,35 @@
-/***************************************************************************************************
+/**************************************************************************************************
  * Name: Noureddine Tahtahi
  * UvAnetID: 15861325
  * Study: BSc Informatica
  *
  * deel1.c:
- * - Given two integers (a and b), this program will calculate and print their corresponding
- *   base integers (x & y).
- * - The property of these integers must correspond to the following two expressions:
+ * - Given two integers (a and b), this program calculates and prints the values of the
+ *   corresponding integers x and y.
+ * - The integers x and y satisfy the following system of equations:
  *      a = x + y
  *      b = x - y
- **************************************************************************************************/
+ *************************************************************************************************/
 #include <stdio.h>
 
-/***************************************************************************************************
+/**************************************************************************************************
  * Prompt the user to specify the value for a and b and calculate the corresponding value
- * for x and y.
+ * for x and y using the system of equations.
  *
- * The expression 'a = x + y' can be rewritten as 'y = a - x' and the expression 'b = x - y' can be
- * rewritten as 'x = b + y'. If we substitute x in the first expression with the second expression
- * we get 'y = a - b + y', which can be reduced to 'y = (a - b) / 2'. For the value of x we can use
- * one of the expressions we found earlier, for example 'x = b + y'.
+ * The system of equations is:
+ *    a = x + y
+ *    b = x - y
+ *
+ * Solving for y:
+ *    y = (a - b) / 2
+ *
+ * Substituting y into one of the original equations, we get:
+ *    x = b + y
  *
  * Returns:
- * If scanf() failed to assign values to 'a' and 'b' returns 1, else returns 0.
- **************************************************************************************************/
+ * - 1 if scanf() fails to assign values to 'a' and 'b'.
+ * - 0 if the program executes successfully.
+ *************************************************************************************************/
 int main(void) {
     int x;
     int y;
