@@ -17,13 +17,13 @@
  * for x and y using the system of equations.
  *
  * The system of equations is:
- *    a = x + y
- *    b = x - y
+ *    a = x + y (1)
+ *    b = x - y (2)
  *
  * Solving for y:
  *    y = (a - b) / 2
  *
- * Substituting y into one of the original equations, we get:
+ * By rewriting the second equation we get:
  *    x = b + y
  *
  * Returns:
